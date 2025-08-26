@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Welcome to my blog! This has been pretty much a lifelong project that I started back in 6th grade, although for the first 7 years (up till 2025) the blog has only been available in Chinese on WeChat Public Accounts. 
 
 ![Astro Paper](public/astropaper-og.jpg)
 
