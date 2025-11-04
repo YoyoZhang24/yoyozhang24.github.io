@@ -1,10 +1,10 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "astropaper-og.jpg",
+  website: "https://yoyozhang24.github.io/",
+  author: "Yoyo Zhang",
+  profile: "https://www.linkedin.com/in/minzhi-yoyo-zhang/",
+  desc: "A blog about tech, career, and lifestyle.",
+  title: "Yoyo Zhang",
+  ogImage: "yz-logo.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,

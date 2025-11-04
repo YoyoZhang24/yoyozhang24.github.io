@@ -103,6 +103,8 @@ const nextPost =
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
       <span aria-hidden="true" class="max-sm:hidden">|</span>
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
+      <span aria-hidden="true" class="max-sm:hidden">|</span>
+      <span id="post-views" class="text-sm opacity-80" data-pagefind-ignore>Views: —</span>
     </div>
     <article
       id="article"
@@ -159,6 +161,56 @@ const nextPost =
   </main>
   <Footer />
 </Layout>
+
+<script is:inline data-astro-rerun>
+  // Post view counter using CountAPI (https://countapi.xyz)
+  (async () => {
+    try {
+      const el = document.getElementById("post-views");
+      if (!el) return;
+
+      const hostname = location.hostname.replace(/\./g, "-");
+      const path = location.pathname.replace(/\/$/, "");
+      const ns = `astro-paper-${hostname}`;
+      const key = path || "/";
+      const viewedKey = `viewed:${ns}:${key}`;
+
+      async function getCurrent() {
+        const r = await fetch(`https://api.countapi.xyz/get/${encodeURIComponent(ns)}/${encodeURIComponent(key)}`);
+        if (!r.ok) throw new Error("get failed");
+        return (await r.json()).value;
+      }
+
+      async function hitOncePerSession() {
+        // increment only once per browser session
+        if (!sessionStorage.getItem(viewedKey)) {
+          const r = await fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(ns)}/${encodeURIComponent(key)}`);
+          if (r.ok) {
+            const data = await r.json();
+            sessionStorage.setItem(viewedKey, "1");
+            return data.value;
+          }
+        }
+        // fallback to get existing value
+        return await getCurrent().catch(async () => {
+          // create key if missing without double-counting broadly
+          const r = await fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(ns)}/${encodeURIComponent(key)}`);
+          if (r.ok) {
+            const data = await r.json();
+            return data.value;
+          }
+          throw new Error("failed to fetch views");
+        });
+      }
+
+      el.textContent = "Views: …";
+      const value = await hitOncePerSession();
+      el.textContent = `Views: ${new Intl.NumberFormat().format(value)}`;
+    } catch (e) {
+      // silently ignore
+    }
+  })();
+</script>
 
 <script is:inline data-astro-rerun>
   /** Create a progress indicator
