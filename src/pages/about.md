@@ -3,53 +3,51 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-## Who I Am
+Hi, this is Yoyo. Maybe we've met, or maybe we're just internet friends. Either way, welcome to my little universe. 
 
-Hey, I'm Yoyo Zhang 👋 You may know me as a writer, an entrepreneur, or a content creator. 
+I've been blogging since 12 years old. My original blog is in Chinese and hosted on WeChat Publications (if you read Chinese, feel free to go follow <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided start another blog dedicated to English posts for my audiences around the world. 
 
-I graduated from Choate Rosemary Hall in 2024, and I'm currently pursuing a B.A. in Economics and a joint B.A./M.S. in Computer Science at the University of Chicago, expected to graduate in 2028. 
+Writing has always been my passion. I started with documenting my journey moving from the China to the U.S. alone in sixth grade. After boarding school and college, my writings have shifted more towards educational and career-related content. 
 
-I have experience in 
+I've very grateful for the platform I've built, including both my Chinese- and English-speaking readers, and the <a href="https://www.yzacademy.com/" target="_blank">tutoring business</a> I've been able to launch as a result. I'm always excited to learn more, build more, and connect with brilliant minds. 
 
-👉 For professional connections: 
-
-👉 For friends and family: 
-
-I'm also active on X, YouTube, and RedNote (小红书).
 
 ## My Journey
 
-I started my first blog at 12 years old (in 2018), and I've been loving it ever since. Back then, I wrote primarily in Chinese, and I hosted my blog on WeChat Publications (微信公众号). I still post actively on there (my account is called 薄荷味的Mint, for the Chinese speakers here), but I decided to start a website for English articles. 
+I've lived many lives. Shanghai is my hometown, but my family and I also spend a lot of our time in a small town in Southern Connecticut. I now go to school in Chicago, and I try to see as much of the world as I can when there's time. 
 
-I've always loved writing. When I started blogging in 6th grade, I was just moving from China to the U.S. Writing was a crucial outlet for me during those lonely times, and it's helped me deal with many changes, challenges, and stressful moments. 
+I graduated from <a href="https://www.choate.edu/" target="_blank" rel="noopener noreferrer">Choate Rosemary Hall</a> in 2024, and I'm currently pursuing a B.A. in Economics and a joint B.A./M.S. degree in Computer Science at <a href="https://www.uchicago.edu/" target="_blank" rel="noopener noreferrer">the University of Chicago</a>. If all goes well, I'll graduate in 2028. 
 
-![Astro Paper](public/astropaper-og.jpg)
+I consider myself a technical creator. I love coding, abstract math, and engineering problems. But I'm also drawn to art, literature, film, and beautiful product design (yes, I make *really* good slides). 
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+In high school, I pursued a wide variety of things: founder of [TEDx](https://tedx.choate.edu/image-with-title-and-description/), founder of [GirlTech Magazine](https://linktr.ee/girltechmag), editor of [school newspaper](https://thechoatenews.choate.edu/about), researcher at [Yale](https://aclanthology.org/people/yoyo-zhang/) ... Some might be more relevant to my current life than others, but I'm grateful for everything I've learned. 
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+<figure>
+  <img src="/assets/images/choate-grad.JPG" alt="Choate graduation" />
+  <figcaption class="text-center">Me at high school graduation, 2024</figcaption>
+</figure>
 
-## Features
+## Professional Stuff
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+Currently, I'm focused on pursuing a career in technology and/or finance. Here are a few relevant experiences (last updated November 8, 2025): 
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+- **ChatSync AI (Summer 2025 - Present)**: Founder & CEO
+- **Plug and Play Tech Center (Fall 2025 - Present)**: University Fellow
+- **Society of Women Engineers (Spring 2025 - Present)**: Academic & Career Director
+- **Yuanfudao (Summer 2025)**: Software Engineering Intern - *Beijing, China*
+- **Portfolio123 (Spring 2025)**: Quantitative Analyst - *Chicago, IL*
+- **UChicago Booth School of Business (Spring 2025)**: Venture Development Intern - *Chicago, IL*
+- **Yale University CNCL (Summer 2023 - 2024)**: Research Assistant - *New Haven, CT*
 
-and so much more.
+Technical skills:
+- **Languages**: Python, C/C++, JavaScript, TypeScript, HTML/CSS, Java, Julia, SQL
+- **Frameworks**: React/Next, Node.js, MongoDB, Flask, Django, Tailwind
+- **Developer Tools**: Git, Docker, AWS, Vim, Chrome
+- **Libraries**: Pandas, NumPy, Matplotlib, OpenCV, PyTorch, Sci-Kit, TensorFlow, HuggingFace
 
-## Thank you
+## More of Me...
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+Thank you for spending your time with my on this corner of the web. Isn't it kind of (just a little) romantic? 
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+If you'd like to connect on professional terms, here's my [LinkedIn](https://www.linkedin.com/in/minzhi-yoyo-zhang/). 
+You can also find me on the socials linked in the footer. ✨
