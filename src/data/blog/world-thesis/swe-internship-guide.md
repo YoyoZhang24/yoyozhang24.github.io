@@ -2,9 +2,9 @@
 title: How to make the most out of your SWE internship (FULL GUIDE)
 author: Yoyo Zhang
 pubDatetime: 2025-07-14T00:00:00Z
-slug: how-to-make-the-most-out-of-your-swe-internship
 featured: true
 draft: false
+category: "World Thesis"
 tags:
   - Tech
   - Career
