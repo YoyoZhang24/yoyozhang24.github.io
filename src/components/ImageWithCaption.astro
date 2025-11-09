@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+  src: string | any; // Can be string path or imported image
+  alt: string;
+  caption?: string;
+  captionAlign?: "left" | "center" | "right";
+  width?: number;
+  height?: number;
+}
+
+const { src, alt, caption, captionAlign = "center", width, height } = Astro.props;
+
+// Check if src is an imported image (has .src property) or a string path
+const isImportedImage = typeof src !== "string" && src && typeof src === "object";
+
+// Determine caption alignment class
+const captionClass = captionAlign === "center" 
+  ? "text-center" 
+  : captionAlign === "right" 
+  ? "text-right" 
+  : "text-left";
+---
+
+<figure>
+  {isImportedImage ? (
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      class="mx-auto border border-border"
+    />
+  ) : (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      class="mx-auto border border-border"
+    />
+  )}
+  {caption && (
+    <figcaption class={`${captionClass} opacity-75`}>
+      {caption}
+    </figcaption>
+  )}
+</figure>
+
