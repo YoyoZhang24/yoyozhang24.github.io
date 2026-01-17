@@ -1,0 +1,17 @@
+---
+export interface Props {
+  width?: string | number;
+  height?: string | number;
+}
+
+const { width = "480", height = "320" } = Astro.props;
+---
+
+<iframe 
+  src="https://yoyoz.substack.com/embed" 
+  width={width}
+  height={height}
+  style="border:1px solid #EEE; background:white;" 
+  frameborder="0" 
+  scrolling="no"
+></iframe>

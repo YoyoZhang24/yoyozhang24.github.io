@@ -8,6 +8,7 @@ import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Hr from "@/components/Hr.astro";
+import Subscribe from "@/components/Subscribe.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
@@ -55,14 +56,12 @@ const featuredProjects = projects
       </a>
 
       <p>
-        19 YO | Founder | Investor | Writer 
-      </p>
-      <p>
-        Welcome to a collection of my latest thoughts and projects.
+        19-Year-Old | Founder | Investor | Writer 
       </p>
       <p class="mt-2">
-        My mission is to save the dead internet, one post at a time.
+        Welcome to a collection of my world thesis and projects.
       </p>
+
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
@@ -117,6 +116,7 @@ const featuredProjects = projects
         </>
       )
     }
+    <Subscribe />
   </main>
   <Footer />
 </Layout>
