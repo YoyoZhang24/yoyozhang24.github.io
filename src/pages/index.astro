@@ -14,7 +14,7 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog", ({ data }) => data.category !== "private");
 const projects = await getCollection("projects");
 
 const sortedPosts = getSortedPosts(posts);

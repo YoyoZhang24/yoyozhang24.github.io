@@ -6,7 +6,7 @@ title: How to integrate Giscus comments into AstroPaper
 slug: how-to-integrate-giscus-comments
 featured: false
 draft: true
-category: "Reading Lists"
+category: "private"
 tags:
   - astro
   - blog

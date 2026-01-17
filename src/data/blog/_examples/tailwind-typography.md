@@ -4,7 +4,7 @@ author: Sat Naing
 pubDatetime: 2022-07-05T02:05:51Z
 featured: false
 draft: true
-category: "Reading Lists"
+category: "private"
 tags:
   - TypeScript
   - Astro
