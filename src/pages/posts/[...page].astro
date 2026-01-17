@@ -20,7 +20,7 @@ const { page } = Astro.props;
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header />
-  <Main pageTitle="Posts" pageDesc="All the articles I’ve posted since 2018.">
+  <Main pageTitle="Posts" pageDesc="My published articles by category.">
     <ul>
       {page.data.map(data => <Card {...data} />)}
     </ul>

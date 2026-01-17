@@ -4,11 +4,12 @@ author: Yoyo Zhang
 pubDatetime: 2025-07-14T00:00:00Z
 featured: true
 draft: false
-category: "World Thesis"
+category: "Substack"
 tags:
   - Tech
   - Career
 description: A personal guide from my first big tech internship, from learning effectively to standing out.
+ogUrl: https://yoursite.com/posts/how-to-make-the-most-out-of-your-swe-internship
 ---
 
 <DateAuthorReadingTime />
@@ -23,7 +24,7 @@ On the first day of my job, I wrote down a few principles on a sticky note to re
 
 **Goal 1: Learn fast.** It goes without saying that learning should be the top priority. There have been *many* times where I got sidetracked by trying too hard to make a good impression, or set sky-high goals that were simply impossible in the timeframe. The smartest option, in my opinion, is to optimize for self-improvement. 
 
-**Goal 2: Deliver value.** My freshman summer internship was relatively low stakes, but you should always try to bring some kind of value to the team. As an intern, it’s expected that you’ll need more handholding, and you'll probably be learning most of the time. But value creation could happen within and beyond the projects you’re assigned. Whenever I could, I tried to help get coffee, take out the trash, or just be a cheerful presence. Those tasks seem trivial but definitely helped me leave a positive impression on the team. 
+**Goal 2: Deliver value.** My freshman summer internship was relatively low stakes, but you should always try to bring some kind of value to the team. As an intern, it's expected that you'll need more handholding, and you'll probably be learning most of the time. But value creation could happen within and beyond the projects you're assigned. Whenever I could, I tried to help get coffee, take out the trash, or just be a cheerful presence. Those tasks seem trivial but definitely helped me leave a positive impression on the team. 
 
 **Goal 3: Build relationships.** I'm not the most outgoing person, but I definitely tried to build a strong relationship with my mentor and colleagues over the eight weeks. What I loved about the SWE internship was that it wasn't super bureaucratic, and all of my senior colleagues were welcoming. I leveraged the collaborative culture to ask questions, create trust, and just show them that I wanteed to be there. 
 
@@ -33,13 +34,13 @@ On the first day of my job, I wrote down a few principles on a sticky note to re
 
 Now delving deeper into each goal. I think the best thing you could do at an internship is to **ask questions**. I was assigned a mentor within our 30-people team, and we both reported to the manager. I understood immediately that I was expected to take initiative when it came to things I didn't understand. On the first day, I was not given any sort of tasks or directions, until I asked for an assignment explicitly. 
 
-The caveat to this is that you should be prepared when you ask questions. We all know the one guy in our lecture that raises his hand every 5 seconds. Don't be that guy. If you’re given an assignment, read through the instructions, then ask pinpointed questions about the specifics. Do your homework. 
+The caveat to this is that you should be prepared when you ask questions. We all know the one guy in our lecture that raises his hand every 5 seconds. Don't be that guy. If you're given an assignment, read through the instructions, then ask pinpointed questions about the specifics. Do your homework. 
 
-**Here are some formulae I’ve found helpful for asking technical questions:**
+**Here are some formulae I've found helpful for asking technical questions:**
 
-> Here’s what I’ve tried [explain previous efforts] ... 
+> Here's what I've tried [explain previous efforts] ... 
 
-> Here’s what I think is happening [summarize roadblock] … 
+> Here's what I think is happening [summarize roadblock] … 
 
 > Can you help me understand [the next steps / how to fix this issue / how to work around this]?
 
@@ -53,11 +54,11 @@ Tracking progress is also very helpful for resume purposes. For technical roles 
 
 ## How to deliver value
 
-I struggle with perfectionism. *A lot*. During my first research internship in high school, I spent three days fixing a small bug in the code before asking my mentor for help. I get that we don't want to embarrass ourselves or deliver incomplete work, but like my dad always reminds me: *“Completion is more important than perfection.”*
+I struggle with perfectionism. *A lot*. During my first research internship in high school, I spent three days fixing a small bug in the code before asking my mentor for help. I get that we don't want to embarrass ourselves or deliver incomplete work, but like my dad always reminds me: *"Completion is more important than perfection."*
 
-We all need to set our student mindset aside for a second and stop treating deliverables like the Hume final essay that we *need* an A on to save our grade (if you know, you know). In a fast-paced work environment, it’s better to deliver something early, even if it’s incomplete, so you can get feedback quickly. 
+We all need to set our student mindset aside for a second and stop treating deliverables like the Hume final essay that we *need* an A on to save our grade (if you know, you know). In a fast-paced work environment, it's better to deliver something early, even if it's incomplete, so you can get feedback quickly. 
 
-For SWE roles specifically, I would play the Devil’s Advocate just a little bit and say that **a healthy dose of perfectionism** can help sometimes. No one cares if you slack off on PEP8 or use emojis as variable names in personal projects, but in a work setting, it’s absolutely necessary to follow professional guidelines and not break anything. 
+For SWE roles specifically, I would play the Devil's Advocate just a little bit and say that **a healthy dose of perfectionism** can help sometimes. No one cares if you slack off on PEP8 or use emojis as variable names in personal projects, but in a work setting, it's absolutely necessary to follow professional guidelines and not break anything. 
 
 The team I was on had an interesting dynamic, where we had very formal, comprehensive guidelines from the corporation, but since our team was newly formed to focus on AI features, our manager had somewhat of a scrappy, startup-like approach. I appreciated having the flexibility to take on projects I was interested in, but I still made sure to read through the company wiki so I could hold myself to the same standards as the senior teammates. 
 
@@ -70,13 +71,13 @@ I was very grateful that I had a very chill team that didn't micromanage or enco
 
 This was done in addition to the spontaneous chats, Q&A, and meetings throughout the day, so that I could have something concrete. It gave me a sense of accomplishment and urgency, and it also helped my mentor point me in the right direction and assign me the most fitting tasks. 
 
-**Here’s a helpful template:**
+**Here's a helpful template:**
 
 ![Daily report template](@/assets/images/daily-report-template.png)
 
 Along with that, I put a huge emphasis on **asking for feedback**. I know I'm not a genius programmer, and I don't take any criticism personally (especially when it comes to my code). One thing I loved about being an intern is that I was expected to make mistakes. I actively invited feedback from my mentor and manager, and I would take notes and follow up once I applied them. 
 
-We've all been told that best people to work with aren’t necessarily the smartest. Whatever I lacked in coding prowess, I tried to make up with humility. Hopefully, it worked.
+We've all been told that best people to work with aren't necessarily the smartest. Whatever I lacked in coding prowess, I tried to make up with humility. Hopefully, it worked.
 
 ## Some closing notes
 
@@ -107,3 +108,4 @@ Yoyo Zhang. "How to Make the Most Out of Your SWE Internship (FULL GUIDE)." Last
   year={2025},
   url={https://yoursite.com/posts/how-to-make-the-most-out-of-your-swe-internship}
 }
+```
