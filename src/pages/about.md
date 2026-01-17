@@ -49,6 +49,6 @@ Technical skills:
 
 Thank you for visiting my little corner of the web!
 
-This site is linked to my [Substack](https://yoyoz.substack.com/) and <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">WeChat</a>) pages, where I post English and Chinese articles, respectively. I'd love if you subscribed!
+This site is linked to my [Substack](https://yoyoz.substack.com/) and <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">WeChat</a> pages, where I post English and Chinese articles, respectively. I'd love if you subscribed!
 
 My socials are linked in the footer. ✨
