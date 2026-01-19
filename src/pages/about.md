@@ -3,9 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Hi! I'm Yoyo. Here's a little about me :)
+Hi! I'm Yoyo. Here's a little about me 🤍
 
-I've been blogging since I was 12. My first blog is in Chinese and hosted on WeChat Publications (if you read Chinese, feel free to go follow <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided to start another blog dedicated to English posts for my audiences around the world. 
+I've been blogging since I was 12. My first blog is in Chinese and hosted on WeChat Publications (if you read Chinese, I'd love if you followed <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided to start another blog dedicated to English posts for my audiences around the world. 
 
 Writing has always been my passion. I started with documenting my journey moving from the China to the U.S. alone in sixth grade. After boarding school and college, my writings have shifted more towards educational and career-related content. 
 
@@ -23,7 +23,7 @@ I love coding, abstract math, and engineering problems. But I'm also drawn to ar
 I pursued a wide variety of things in high school: researching at [Yale](https://aclanthology.org/people/yoyo-zhang/), founding [TEDxChoate](https://tedx.choate.edu/image-with-title-and-description/), founding [GirlTech Magazine](https://linktr.ee/girltechmag), editing [The Choate News](https://thechoatenews.choate.edu/about) ... Some might be more relevant to my current life than others, but I'm grateful for everything I've learned. 
 
 <figure>
-  <img src="assets/images/choate-grad.JPG" alt="Choate graduation" />
+  <img src="/assets/images/choate-grad.JPG" alt="Choate graduation" />
   <figcaption class="text-center">High school graduation, 2024</figcaption>
 </figure>
 
