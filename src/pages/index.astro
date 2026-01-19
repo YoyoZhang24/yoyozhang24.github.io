@@ -59,14 +59,21 @@ const featuredProjects = projects
         19-Year-Old | Founder | Investor | Writer 
       </p>
       <p class="mt-2">
-        Welcome to a collection of my world thesis and projects.
+        Welcome to a collection of my <a href="https://yoyoz.substack.com" target="_blank" rel="noopener noreferrer">world thesis</a> 
+        and <a href="/projects/" target="_blank" rel="noopener noreferrer">projects</a>. 
+        I write about AI, startups, and the philosophy of life.
+        Subcribe to my <a href="https://yoyoz.substack.com" target="_blank" rel="noopener noreferrer">newsletter</a>
+        to get updates from me directly. 
+        Learn more about me <a href="/about/">here</a>. 🤍 
       </p>
 
       {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find me on:</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
+              Find me on:
+            </div>
             <Socials />
           </div>
         )
