@@ -5,7 +5,7 @@ title: "About"
 
 Hi, this is Yoyo. Maybe we've met, or maybe we're just internet friends. Either way, welcome to my little universe. 
 
-I've been blogging since 12 years old. My original blog is in Chinese and hosted on WeChat Publications (if you read Chinese, feel free to go follow <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided start another blog dedicated to English posts for my audiences around the world. 
+I've been blogging since 12 years old. My original blog is in Chinese and hosted on WeChat Publications (if you read Chinese, feel free to go follow <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided to start another blog dedicated to English posts for my audiences around the world. 
 
 Writing has always been my passion. I started with documenting my journey moving from the China to the U.S. alone in sixth grade. After boarding school and college, my writings have shifted more towards educational and career-related content. 
 
@@ -47,7 +47,7 @@ Technical skills:
 
 ## More of Me...
 
-Thank you for spending your time with my on this corner of the web. Isn't it kind of (just a little) romantic? 
+Thank you for spending your time with me at this little corner of the web!
 
-If you'd like to connect on professional terms, here's my [LinkedIn](https://www.linkedin.com/in/minzhi-yoyo-zhang/). 
+If you'd like to connect professionally, here's my [LinkedIn](https://www.linkedin.com/in/minzhi-yoyo-zhang/). 
 You can also find me on the socials linked in the footer. ✨

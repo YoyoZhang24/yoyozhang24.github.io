@@ -3,7 +3,7 @@ import getSortedPosts from "./getSortedPosts";
 
 const getPostsByCategory = (
   posts: CollectionEntry<"blog">[],
-  category: "World Thesis" | "Reading Lists" | "Product Reviews"
+  category: "Substack" | "WeChat"
 ) =>
   getSortedPosts(
     posts.filter(post => post.data.category === category)

@@ -10,19 +10,18 @@ import { SITE } from "@/config";
 
 const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-const categories = ["World Thesis", "Reading Lists", "Product Reviews"] as const;
+const categories = ["Substack", "WeChat"] as const;
 type Category = typeof categories[number];
 
 const postsByCategory = {
-  "World Thesis": getPostsByCategory(posts, "World Thesis"),
-  "Reading Lists": getPostsByCategory(posts, "Reading Lists"),
-  "Product Reviews": getPostsByCategory(posts, "Product Reviews"),
+  "Substack": getPostsByCategory(posts, "Substack"),
+  "WeChat": getPostsByCategory(posts, "WeChat"),
 };
 ---
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header />
-  <Main pageTitle="Posts" pageDesc="All the articles I’ve posted since 2018.">
+  <Main pageTitle="Posts" pageDesc="My published articles by category.">
     <div id="posts-container">
       <div class="mb-6 border-b border-divider">
         <nav class="flex gap-4" role="tablist" aria-label="Post categories">
@@ -31,7 +30,7 @@ const postsByCategory = {
               class="category-tab px-4 py-2 font-medium text-muted hover:text-accent transition-colors border-b-2 border-transparent aria-selected:border-accent aria-selected:text-accent"
               data-category={category}
               role="tab"
-              aria-selected={category === "World Thesis"}
+              aria-selected={category === "Substack"}
               aria-controls={`panel-${category.toLowerCase().replace(/\s+/g, "-")}`}
               id={`tab-${category.toLowerCase().replace(/\s+/g, "-")}`}
             >
