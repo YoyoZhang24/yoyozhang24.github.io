@@ -5,11 +5,12 @@ import Datetime from "./Datetime.astro";
 
 export interface Props extends CollectionEntry<"blog"> {
   variant?: "h2" | "h3";
+  showCategoryOnHover?: boolean;
 }
 
-const { variant = "h2", data } = Astro.props;
+const { variant = "h2", data, showCategoryOnHover = false } = Astro.props;
 
-const { title, description, pubDatetime, modDatetime, timezone, ogUrl } = data;
+const { title, description, pubDatetime, modDatetime, timezone, ogUrl, category } = data;
 
 const headerProps = {
   style: { viewTransitionName: slugifyStr(title) },
@@ -22,13 +23,23 @@ const headerProps = {
     href={ogUrl}
     target="_blank"
     rel="noopener noreferrer"
-    class="inline-block text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0"
+    class:list={[
+      "text-lg font-medium text-accent decoration-dashed underline-offset-4 focus-visible:no-underline focus-visible:underline-offset-0",
+      showCategoryOnHover ? "group inline-flex items-baseline gap-2" : "inline-block",
+    ]}
   >
     {
       variant === "h2" ? (
         <h2 {...headerProps}>{title}</h2>
       ) : (
         <h3 {...headerProps}>{title}</h3>
+      )
+    }
+    {
+      showCategoryOnHover && (
+        <span class="category-label rounded-full bg-muted px-2 py-0.5 text-xs font-normal text-foreground/70 opacity-0 transition-all duration-200 group-hover:opacity-100">
+          {category}
+        </span>
       )
     }
   </a>
