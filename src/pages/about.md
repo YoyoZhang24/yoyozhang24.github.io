@@ -23,7 +23,7 @@ I consider myself a technical creator. I love coding, abstract math, and enginee
 In high school, I pursued a wide variety of things: founder of [TEDx](https://tedx.choate.edu/image-with-title-and-description/), founder of [GirlTech Magazine](https://linktr.ee/girltechmag), editor of [school newspaper](https://thechoatenews.choate.edu/about), researcher at [Yale](https://aclanthology.org/people/yoyo-zhang/) ... Some might be more relevant to my current life than others, but I'm grateful for everything I've learned. 
 
 <figure>
-  <img src="/assets/images/choate-grad.JPG" alt="Choate graduation" />
+  <img src="assets/images/choate-grad.JPG" alt="Choate graduation" />
   <figcaption class="text-center">Me at high school graduation, 2024</figcaption>
 </figure>
 
