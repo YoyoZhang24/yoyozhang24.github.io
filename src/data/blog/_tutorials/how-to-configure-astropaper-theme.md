@@ -6,7 +6,7 @@ title: How to configure AstroPaper theme
 slug: how-to-configure-astropaper-theme
 featured: true
 draft: true
-category: "Reading Lists"
+category: "private"
 tags:
   - configuration
   - docs

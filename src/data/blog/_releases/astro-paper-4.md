@@ -5,7 +5,7 @@ title: AstroPaper 4.0
 slug: "astro-paper-v4"
 featured: false
 draft: true
-category: "Reading Lists"
+category: "private"
 ogImage: ../../../assets/images/AstroPaper-v4.png
 tags:
   - release

@@ -8,7 +8,7 @@ import Card from "@/components/Card.astro";
 import getPostsByCategory from "@/utils/getPostsByCategory";
 import { SITE } from "@/config";
 
-const posts = await getCollection("blog", ({ data }) => !data.draft);
+const posts = await getCollection("blog", ({ data }) => !data.draft && data.category !== "private");
 
 const categories = ["Substack", "WeChat"] as const;
 type Category = typeof categories[number];

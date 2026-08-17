@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   }
 
   const posts = await getCollection("blog").then(p =>
-    p.filter(({ data }) => !data.draft && !data.ogImage)
+    p.filter(({ data }) => !data.draft && !data.ogImage && data.category !== "private")
   );
 
   return posts.map(post => ({
@@ -27,8 +27,9 @@ export const GET: APIRoute = async ({ props }) => {
     });
   }
 
+  const imageBuffer = await generateOgImageForPost(props as CollectionEntry<"blog">);
   return new Response(
-    await generateOgImageForPost(props as CollectionEntry<"blog">),
+    new Uint8Array(imageBuffer),
     {
       headers: { "Content-Type": "image/png" },
     }
