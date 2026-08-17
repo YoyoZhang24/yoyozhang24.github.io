@@ -1,5 +1,5 @@
 ---
-title: Cali diary 1: 金光闪闪的斯坦福
+title: Cali diary 1：金光闪闪的斯坦福
 author: Yoyo Zhang
 pubDatetime: 2022-11-25T00:00:00Z
 featured: true

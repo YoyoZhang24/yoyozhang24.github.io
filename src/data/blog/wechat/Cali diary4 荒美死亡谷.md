@@ -1,5 +1,5 @@
 ---
-title: Cali diary 4: 荒美死亡谷
+title: Cali diary 4：荒美死亡谷
 author: Yoyo Zhang
 pubDatetime: 2022-11-28T00:00:00Z
 featured: true

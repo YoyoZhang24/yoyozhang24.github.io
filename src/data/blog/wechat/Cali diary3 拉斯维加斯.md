@@ -1,5 +1,5 @@
 ---
-title: Cali diary 3: 拉斯维加斯
+title: Cali diary 3：拉斯维加斯
 author: Yoyo Zhang
 pubDatetime: 2022-11-26T00:00:00Z
 featured: true

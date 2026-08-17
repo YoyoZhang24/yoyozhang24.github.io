@@ -1,5 +1,5 @@
 ---
-title: Cali diary 1: 降落午夜旧金山
+title: Cali diary 1：降落午夜旧金山
 author: Yoyo Zhang
 pubDatetime: 2022-11-23T00:00:00Z
 featured: true
