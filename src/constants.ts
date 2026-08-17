@@ -3,6 +3,8 @@ import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconInstagram from "@/assets/icons/IconInstagram.svg";
+import IconTikTok from "@/assets/icons/IconTikTok.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
@@ -18,16 +20,22 @@ interface Social {
 
 export const SOCIALS: Social[] = [
   {
-    name: "GitHub",
-    href: "https://github.com/YoyoZhang24",
-    linkTitle: `${SITE.title} on GitHub`,
-    icon: IconGitHub,
-  },
-  {
     name: "X",
     href: "https://x.com/yoyozhang06",
     linkTitle: `${SITE.title} on X`,
     icon: IconBrandX,
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/yoyozhang06",
+    linkTitle: `${SITE.title} on Instagram`,
+    icon: IconInstagram,
+  },
+  {
+    name: "TikTok",
+    href: "https://tiktok.com/@yoyozhang06",
+    linkTitle: `${SITE.title} on TikTok`,
+    icon: IconTikTok,
   },
   {
     name: "LinkedIn",
@@ -36,10 +44,10 @@ export const SOCIALS: Social[] = [
     icon: IconLinkedin,
   },
   {
-    name: "Mail",
-    href: "mailto:yoyozhang@uchicago.edu",
-    linkTitle: `Send an email to ${SITE.title}`,
-    icon: IconMail,
+    name: "GitHub",
+    href: "https://github.com/YoyoZhang24",
+    linkTitle: `${SITE.title} on GitHub`,
+    icon: IconGitHub,
   },
 ] as const;
 
