@@ -52,7 +52,13 @@ I built this website based on [AstroPaper](https://astro-paper.pages.dev/posts/)
 │   ├── components/
 │   ├── data/
 │   │   └── blog/
-│   │       └── some-blog-posts.md
+│   │       └── _examples/
+│   │       └── _releases/
+│   │       └── _tutorials/
+│   │       └── drafts/
+│   │       └── world-thesis/
+│   │       └── product-reviews/
+│   │       └── reading-list/
 │   ├── layouts/
 │   └── pages/
 │   └── styles/
