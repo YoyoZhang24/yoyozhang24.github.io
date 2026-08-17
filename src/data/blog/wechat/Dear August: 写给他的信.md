@@ -1,5 +1,5 @@
 ---
-title: Dear August: 写给他的信
+title: Dear August：写给他的信
 author: Yoyo Zhang
 pubDatetime: 2023-08-31T00:00:00Z
 featured: true
