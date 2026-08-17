@@ -22,7 +22,27 @@ const postsByCategory = {
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header />
-  <Main pageTitle="Posts" pageDesc="My published articles by category.">
+  <Main pageTitle="Posts">
+    <fragment slot="pageDesc">
+      Get updates when I post:&nbsp;{" "}
+      <a
+        href="https://yoyoz.substack.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline decoration-dashed underline-offset-4 hover:text-accent"
+      >
+        Substack
+      </a> {" "}
+       & {" "}
+      <a
+        href="/assets/wechat-blog-qr.png"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline decoration-dashed underline-offset-4 hover:text-accent"
+      >
+        WeChat
+      </a>
+    </fragment>
     <div id="posts-container">
       <div class="mb-6 border-b border-divider">
         <nav class="flex gap-4" role="tablist" aria-label="Post categories">
