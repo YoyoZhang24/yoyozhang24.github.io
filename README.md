@@ -1,4 +1,4 @@
-# My Website 🪀
+# Welcome to my website 🪀
 
 ![AstroPaper](public/astropaper-og.jpg)
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/community/file/1356898632249991861)
@@ -59,6 +59,7 @@ I built this website based on [AstroPaper](https://astro-paper.pages.dev/posts/)
 │   │       └── world-thesis/
 │   │       └── product-reviews/
 │   │       └── reading-list/
+│   │   └── project/
 │   ├── layouts/
 │   └── pages/
 │   └── styles/

@@ -6,6 +6,7 @@ title: Predefined color schemes
 slug: predefined-color-schemes
 featured: false
 draft: true
+category: "Reading Lists"
 tags:
   - color-schemes
 description:

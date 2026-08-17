@@ -6,6 +6,7 @@ title: Adding new posts in AstroPaper theme
 slug: adding-new-posts-in-astropaper-theme
 featured: true
 draft: true
+category: "Reading Lists"
 tags:
   - docs
 description:
@@ -108,6 +109,7 @@ pubDatetime: 2022-09-21T05:17:19Z
 slug: the-title-of-the-post
 featured: true
 draft: false
+category: "Reading Lists"
 tags:
   - some
   - example
