@@ -1,0 +1,85 @@
+---
+import AboutLayout from "../layouts/AboutLayout.astro";
+import Subscribe from "../components/Subscribe.astro";
+
+const frontmatter = {
+  title: "Resources",
+};
+---
+
+<AboutLayout frontmatter={frontmatter}>
+  <p>Some resources on startups, VC, and AI that I've found helpful 🤍</p>
+
+  <p><em>Last updated: Jan 24, 2026</em></p>
+
+  <h2>Podcasts</h2>
+
+  <ul>
+    <li><a href="https://aidailybrief.ai/"><em>The AI Daily Brief</em></a> - Nathaniel Whittemore</li>
+    <li><a href="https://www.theburnouts.com"><em>The Burnouts</em></a> - Phoebe Gates, Sophia Kianni</li>
+    <li><a href="https://open.spotify.com/show/7JMUXofD5O7klDdsZG5LOW"><em>Generating Alpha Podcast</em></a> - Amir Fischer</li>
+    <li><a href="https://a16z.com/podcasts/a16z-show/"><em>The a16z Show</em></a> - a16z</li>
+    <li><a href="https://colossus.com/series/invest-like-the-best/"><em>Invest Like the Best</em></a> - Patrick O'Shaughnessy</li>
+    <li><a href="https://www.ycombinator.com/blog/tag/podcast"><em>Y Combinator Startup Podcast</em></a> - Y Combinator</li>
+    <li><a href="https://thewallstreetskinny.com/"><em>The Wall Street Skinny</em></a> - Kristen Kelly, Jen Saarbach</li>
+    <li><a href="https://aliabdaal.com/podcast/"><em>Deep Dive</em></a> - Ali Abdaal</li>
+    <li><a href="https://www.youtube.com/@whynottv1999"><em>WhynotTV</em></a> - Tairan He</li>
+    <li><a href="https://www.acquired.fm/"><em>Acquired</em></a> - Ben Gilbert,  David Rosenthal</li>
+    <li><a href="https://www.guyraz.com/howibuiltthisbook"><em>How I Built This</em></a> - Guy Raz</li>
+    <li><a href="https://open.spotify.com/show/4aRP2XSavdtrLG5FZoonOK"><em>How I AI</em></a> - Claire Vo</li>
+  </ul>
+
+  <h2>Newsletters</h2>
+
+  <ul>
+    <li><a href="https://fortune.com/tag/term-sheet/"><em>Term Sheet</em></a> - Fortune</li>
+    <li><a href="https://techcrunch.com/newsletters/">TechCrunch</a> (they have so many newsletters!)</li>
+    <li><a href="https://www.bloomberg.com/account/newsletters/money-stuff"><em>Money Stuff</em></a> - Matt Levine (Bloomberg)</li>
+    <li><a href="https://www.morningbrew.com/">Morning Brew</a></li>
+    <li><a href="https://www.sahilbloom.com/#Newsletter"><em>Curiosity Chronicle</em></a> - Sahil Bloom</li>
+    <li><a href="https://leonisnewsletter.substack.com/"><em>The Thesis</em></a> - Leonis Capital</li>
+    <li><a href="https://www.generativevalue.com/"><em>Generative Value</em></a> - Eric Flaningam</li>
+    <li><a href="https://www.interconnects.ai/"><em>Interconnects</em></a> - Nathan Lambert</li>
+  </ul>
+
+  <h2>Technical Learning</h2>
+  <ul>
+    <li><a href="https://www.nvidia.com/en-us/training/self-paced-courses/#all-free"><em>NVIDIA | Deep Leaning Institute</em></a></li>
+    <li><a href="https://cohere.com/llmu"><em>Cohere | LLM University</em></a></li>
+    <li><a href="https://developers.google.com/machine-learning/crash-course"><em>Google | Machine Learning Crash Course</em></a></li>
+    <li><a href="https://lilianweng.github.io/"><em>Lil'Log</em></a> - Lilian Weng</li>
+    <li><a href="https://www.deeplearning.ai/"><em>DeepLearning.AI</em></a> - Andrew Ng</li>
+    <li><a href="https://youtu.be/7xTGNNLPyMI?si=81JRXTo1cd0qbnIs"><em>Deep Dive into LLMs like ChatGPT</em></a> - Andrej Karpathy</li>
+    <li><a href="https://mml-book.github.io/"><em>Mathematics for Machine Learning</em></a> - A. Aldo Faisal, Cheng Soon Ong, Marc Peter Deisenroth</li>
+  </ul>
+
+  <h2>My Reading List 🤍</h2>
+
+  <ul>
+    <li><em>Thinking, Fast and Slow</em> - Daniel Kahneman</li>
+    <li><em>Chip War</em> - Chris Miller</li>
+    <li><em>Sapiens: A Brief History of Humankind</em> - Yuval Noah Harari</li>
+    <li><em>When Everyone Knows That Everyone Knows</em> - Steven Pinker</li>
+    <li><em>Source Code</em> - Bill Gates</li>
+    <li><em>Empire of AI</em> - Karen Hao</li>
+    <li><em>The Intelligence Investor</em> - Benjamin Graham</li>
+    <li><em>The 4-Hour Work Week</em> - Tim Ferriss</li>
+    <li><em>The 22 Immutable Laws of Marketing</em> - Al Ries, Jack Trout</li>
+    <li><em>Principles</em> - Ray Dalio</li>
+    <li><em>The Power Law</em> - Sebastian Mallaby</li>
+    <li><em>What It Takes</em> - Stephen Schwarzman</li>
+    <li><em>Zero to One</em> - Peter Thiel, Blake Masters</li>
+    <li><em>#BreakIntoVC</em> - Bradley Miles</li>
+    <li><em>Venture Deals</em> - Brad Feld, Jason Mendelson</li>
+    <li><em>Secrets of Sand Hill Road</em> - Scott Kupor</li>
+    <li><em>The Business of Venture Capital</em> - Mahendra Ramsinghani</li>
+    <li><em>Mastering the VC Game</em> - Jeff Bussgang</li>
+    <li><em>Term Sheets and Valuations</em> - Alex Wilmerding</li>
+    <li><em>Do More Faster</em> - Brad Feld, David Cohen</li>
+    <li><em>Road to a VC Career</em> - John Gannon</li>
+    <li><em>The Four Steps to the Epiphany</em> - Steve Blank</li>
+    <li><em>Why Killer Products Don't Sell</em> - Dominic Rowsell, Ian Gotts</li>
+  </ul>
+
+  <Subscribe />
+</AboutLayout>
