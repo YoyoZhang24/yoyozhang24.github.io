@@ -9,11 +9,11 @@ import { SITE } from "@/config";
 
 const projects = await getCollection("projects");
 const sortedProjects = projects.sort((a, b) => {
-  const dateA = a.data.pubDatetime 
-    ? new Date(a.data.pubDatetime).getTime() 
+  const dateA = a.data.pubDatetime
+    ? new Date(a.data.pubDatetime).getTime()
     : 0;
-  const dateB = b.data.pubDatetime 
-    ? new Date(b.data.pubDatetime).getTime() 
+  const dateB = b.data.pubDatetime
+    ? new Date(b.data.pubDatetime).getTime()
     : 0;
   return dateB - dateA;
 });
@@ -34,4 +34,3 @@ const sortedProjects = projects.sort((a, b) => {
   </Main>
   <Footer />
 </Layout>
-
