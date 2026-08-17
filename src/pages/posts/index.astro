@@ -68,6 +68,7 @@ const postsByCategory = {
                       ]}
                     >
                       {year}
+                      <sup class="text-sm">{yearPosts.length}</sup>
                     </h3>
                     <ul>
                       {yearPosts.map(post => <Card {...post} />)}
