@@ -3,9 +3,9 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-Hi! I'm Yoyo (like the toy but no hyphen). Here's a little about me 🪀
+Hi! I'm Yoyo 🪀
 
-I've been blogging since I was 12. My first blog is on WeChat Publications (if you read Chinese: <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided to start another blog dedicated to English posts for my audiences around the world. 
+I've been blogging since I was 12. My first blog is on WeChat Publications (<a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">薄荷味的Mint</a>). After 7 years, I finally decided to start another <a href="https://yoyoz.substack.com/" target="_blank" rel="nonopener noreferrer">blog</a> for my English-speaking readers around the world. 
 
 Writing has always been my passion. I started documenting my journey moving from the China to the U.S. alone in sixth grade. After going through six years of boarding school and getting into college, my writings have shifted more towards educational and career-related content. 
 
@@ -14,41 +14,35 @@ I'm so grateful for my platforms and the businesses I've been able to build as a
 
 ## My Journey (so far)
 
-I've lived many lives. I was born and raised in Shanghai, and then moved to Connecticut for junior boarding school. My family now splits our time between Shanghai and New York City / Connecticut. I go to school in Chicago, but I'm always on the go.
+I've lived many lives. I was born and raised in Shanghai, and then moved to the East Coast for junior boarding school. My family now splits our time between two continents. I frequently visit Chicago, New York, San Francisco, and Miami.
 
 I graduated from <a href="https://www.choate.edu/" target="_blank" rel="noopener noreferrer">Choate Rosemary Hall</a> in 2024, and I'm currently pursuing a B.A. in Economics and a joint B.A./M.S. in Computer Science at <a href="https://www.uchicago.edu/" target="_blank" rel="noopener noreferrer">the University of Chicago</a>.
 
 I love coding, abstract math, and engineering problems. But I'm also drawn to art, literature, film, and design (I unironically love making pretty slides). 
 
-I pursued a wide variety of things in high school: researching at [Yale](https://aclanthology.org/people/yoyo-zhang/), founding [TEDxChoate](https://tedx.choate.edu/image-with-title-and-description/), founding [GirlTech Magazine](https://linktr.ee/girltechmag), editing [The Choate News](https://thechoatenews.choate.edu/about) ... Some might be more relevant to my current life than others, but I'm grateful for everything I've learned. 
+I pursued a wide variety of things in high school: researching at [Yale](https://aclanthology.org/people/yoyo-zhang/), running [TEDxChoate](https://tedx.choate.edu/image-with-title-and-description/), managing [GirlTech Magazine](https://linktr.ee/girltechmag), editing [The Choate News](https://thechoatenews.choate.edu/about) ... Some might be more relevant to my current life than others, but I'm grateful for everything I've learned. 
 
 <figure>
   <img src="/assets/images/choate-grad.JPG" alt="Choate graduation" />
-  <figcaption class="text-center">High school graduation, 2024</figcaption>
+  <figcaption class="text-center">High school graduation</figcaption>
 </figure>
 
-## Professional Stuff
+## My Sidequests
 
-A concise version of my resume (last updated November 8, 2025): 
+I'm an entrepreneuer at heart. My philosophy is to heavily index on experiences that can enrich my life, my skills, and the people around me. 
 
-- **ChatSync AI (Summer 2025 - Present)**: Founder & CEO
-- **Plug and Play Tech Center (Fall 2025 - Present)**: University Fellow
-- **Society of Women Engineers (Spring 2025 - Present)**: Academic & Career Director
-- **Yuanfudao (Summer 2025)**: Software Engineering Intern - *Beijing, China*
-- **Portfolio123 (Spring 2025)**: Quantitative Analyst - *Chicago, IL*
-- **UChicago Booth School of Business (Spring 2025)**: Venture Development Intern - *Chicago, IL*
-- **Yale University CNCL (Summer 2023 - 2024)**: Research Assistant - *New Haven, CT*
+To learn more my projects, check [here](/projects).
 
-Technical skills:
-- **Languages**: Python, C/C++, JavaScript, TypeScript, HTML/CSS, Java, Julia, SQL
-- **Frameworks**: React/Next, Node.js, MongoDB, Flask, Django, Tailwind
-- **Developer Tools**: Git, Docker, AWS, Vim, Chrome
-- **Libraries**: Pandas, NumPy, Matplotlib, OpenCV, PyTorch, Sci-Kit, TensorFlow, HuggingFace
+## About this site
 
-## Let's Connect!
+This site is built on [Astro](https://github.com/withastro/astro) and Github Pages. I mirror my posts on [Substack](https://yoyoz.substack.com/) and [WeChat](/assets/wechat-blog-qr.png) on [this page](/posts). You can also see an aggregated timeline of all articles on the [archives page](/archives). 
 
-Thank you for visiting my little corner of the web!
+## Let's connect
 
-I post articles on [Substack](https://yoyoz.substack.com/) (English) and <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">WeChat</a> (Chinese). The posts are mirrored <a href="/posts/">here</a> as well, but you'll get real-time updates if you subscribe!
+If you'd like to book a call with me, please use [this link](https://cal.com/yoyozhang).
 
-Socials linked in footer. ✨
+If you're trying to scrape my information, email spam@uce.gov. 
+
+To get real time updates for my <a href="/posts/">posts</a>, go to my [Substack](https://yoyoz.substack.com/) (English) and <a href="/assets/wechat-blog-qr.png" target="_blank" rel="noopener noreferrer">WeChat</a> (Chinese). 
+
+I'm active on all the socials linked in footer. ✨
