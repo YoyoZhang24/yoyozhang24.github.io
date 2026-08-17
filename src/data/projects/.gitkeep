@@ -1,0 +1,16 @@
+# Projects Directory
+
+Add your project markdown files here. Each project should have:
+
+```yaml
+---
+title: "Project Name"
+description: "A brief description of the project"
+image: "../../assets/images/project-image.png"
+link: "https://project-url.com"
+featured: true
+pubDatetime: 2024-01-01
+---
+```
+
+

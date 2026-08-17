@@ -6,6 +6,7 @@ import Footer from "@/components/Footer.astro";
 import Socials from "@/components/Socials.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import Card from "@/components/Card.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
 import Hr from "@/components/Hr.astro";
 import getSortedPosts from "@/utils/getSortedPosts";
 import IconRss from "@/assets/icons/IconRss.svg";
@@ -14,10 +15,21 @@ import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 
 const posts = await getCollection("blog");
+const projects = await getCollection("projects");
 
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const recentPosts = sortedPosts.slice(0, SITE.postPerIndex);
+const featuredProjects = projects
+  .filter(({ data }) => data.featured)
+  .sort((a, b) => {
+    const dateA = a.data.pubDatetime 
+      ? new Date(a.data.pubDatetime).getTime() 
+      : 0;
+    const dateB = b.data.pubDatetime 
+      ? new Date(b.data.pubDatetime).getTime() 
+      : 0;
+    return dateB - dateA;
+  });
 ---
 
 <Layout>
@@ -46,7 +58,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         19 | Founder | Engineer | Investor | Writer
       </p>
       <p class="mt-2">
-        Beating the dead internet theory, one post at a time. 
+        Resurrecting the dead internet, one post at a time. 
       </p>
       {
         // only display if at least one social link is enabled
@@ -62,30 +74,13 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     <Hr />
 
     {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
-            <ul>
-              {featuredPosts.map(data => (
-                <Card variant="h3" {...data} />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
-      )
-    }
-
-    {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
           <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
-            {recentPosts.map(
-              (data, index) =>
-                index < SITE.postPerIndex && <Card variant="h3" {...data} />
-            )}
+            {recentPosts.map((data) => (
+              <Card variant="h3" {...data} />
+            ))}
           </ul>
         </section>
       )
@@ -97,6 +92,28 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
     </div>
+
+    {
+      featuredProjects.length > 0 && (
+        <>
+          <Hr />
+          <section id="technical-projects" class="pt-12 pb-6">
+            <h2 class="text-2xl font-semibold tracking-wide">Technical Projects</h2>
+            <ul>
+              {featuredProjects.map((project) => (
+                <ProjectCard {project} />
+              ))}
+            </ul>
+          </section>
+          <div class="my-8 text-center">
+            <LinkButton href="/projects/">
+              All Projects
+              <IconArrowRight class="inline-block rtl:-rotate-180" />
+            </LinkButton>
+          </div>
+        </>
+      )
+    }
   </main>
   <Footer />
 </Layout>

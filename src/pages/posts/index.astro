@@ -1,0 +1,110 @@
+---
+import { getCollection } from "astro:content";
+import Main from "@/layouts/Main.astro";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Card from "@/components/Card.astro";
+import getPostsByCategory from "@/utils/getPostsByCategory";
+import { SITE } from "@/config";
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+
+const categories = ["World Thesis", "Reading Lists", "Product Reviews"] as const;
+type Category = typeof categories[number];
+
+const postsByCategory = {
+  "World Thesis": getPostsByCategory(posts, "World Thesis"),
+  "Reading Lists": getPostsByCategory(posts, "Reading Lists"),
+  "Product Reviews": getPostsByCategory(posts, "Product Reviews"),
+};
+---
+
+<Layout title={`Posts | ${SITE.title}`}>
+  <Header />
+  <Main pageTitle="Posts" pageDesc="All the articles I’ve posted since 2018.">
+    <div id="posts-container">
+      <div class="mb-6 border-b border-divider">
+        <nav class="flex gap-4" role="tablist" aria-label="Post categories">
+          {categories.map((category) => (
+            <button
+              class="category-tab px-4 py-2 font-medium text-muted hover:text-accent transition-colors border-b-2 border-transparent aria-selected:border-accent aria-selected:text-accent"
+              data-category={category}
+              role="tab"
+              aria-selected={category === "World Thesis"}
+              aria-controls={`panel-${category.toLowerCase().replace(/\s+/g, "-")}`}
+              id={`tab-${category.toLowerCase().replace(/\s+/g, "-")}`}
+            >
+              {category}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {categories.map((category) => {
+        const categoryPosts = postsByCategory[category];
+        const categoryId = category.toLowerCase().replace(/\s+/g, "-");
+        return (
+          <div
+            id={`panel-${categoryId}`}
+            role="tabpanel"
+            aria-labelledby={`tab-${categoryId}`}
+            class="category-panel hidden"
+            data-category={category}
+          >
+            {categoryPosts.length > 0 ? (
+              <ul>
+                {categoryPosts.map((post) => <Card {...post} />)}
+              </ul>
+            ) : (
+              <p class="text-muted">No posts in this category yet.</p>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </Main>
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const tabs = document.querySelectorAll(".category-tab");
+    const panels = document.querySelectorAll(".category-panel");
+    
+    // Show first panel by default
+    if (panels.length > 0) {
+      panels[0].classList.remove("hidden");
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const category = tab.getAttribute("data-category");
+        if (!category) return;
+
+        // Update tab states
+        tabs.forEach((t) => {
+          t.setAttribute("aria-selected", "false");
+        });
+        tab.setAttribute("aria-selected", "true");
+
+        // Show/hide panels
+        panels.forEach((panel) => {
+          if (panel.getAttribute("data-category") === category) {
+            panel.classList.remove("hidden");
+          } else {
+            panel.classList.add("hidden");
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .category-tab:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+</style>
+
