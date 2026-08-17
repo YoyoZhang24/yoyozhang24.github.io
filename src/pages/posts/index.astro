@@ -6,6 +6,7 @@ import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 import Card from "@/components/Card.astro";
 import getPostsByCategory from "@/utils/getPostsByCategory";
+import getPostsByGroupCondition from "@/utils/getPostsByGroupCondition";
 import { SITE } from "@/config";
 
 const posts = await getCollection("blog", ({ data }) => !data.draft && data.category !== "private");
@@ -52,9 +53,27 @@ const postsByCategory = {
             data-category={category}
           >
             {categoryPosts.length > 0 ? (
-              <ul>
-                {categoryPosts.map((post) => <Card {...post} />)}
-              </ul>
+              Object.entries(
+                getPostsByGroupCondition(categoryPosts, post =>
+                  post.data.pubDatetime.getFullYear()
+                )
+              )
+                .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+                .map(([year, yearPosts], index) => (
+                  <section>
+                    <h3
+                      class:list={[
+                        "text-2xl font-bold",
+                        index > 0 ? "mt-8 mb-2" : "mb-2",
+                      ]}
+                    >
+                      {year}
+                    </h3>
+                    <ul>
+                      {yearPosts.map(post => <Card {...post} />)}
+                    </ul>
+                  </section>
+                ))
             ) : (
               <p class="text-muted">No posts in this category yet.</p>
             )}
